@@ -5,7 +5,7 @@
 
 This is a copy of the [LCD_SharpBoosterPack_SPI library][4] that is included with the [Energia application][1].
 
-Texas Instruments MSP430 and Tiva microcontrollers can be compiled using the Arduino IDE/CLI by installing the relevant [platform cores][6] through the Boards Manager. However, the LCD_SharpBoosterPack_SPI is included in the Energia application itself, and not the specific platform cores. This means that if you install the MSP430 or Tiva core, you don't end up getting the LCD_SharpBoosterPack_SPI library. So a sketch that used that library and compiled fine on Energia would not compile on Arduino without some additional steps.
+Texas Instruments MSP430 and Tiva microcontrollers can be compiled using the Arduino IDE/CLI by installing the relevant [platform cores][6] through the Boards Manager. However, the LCD_SharpBoosterPack_SPI library is included in the Energia application itself, and not the specific platform cores. This means that if you install the MSP430 or Tiva core, you don't end up getting the LCD_SharpBoosterPack_SPI library. So a sketch that used that library and compiled fine on Energia would not compile on Arduino without some additional steps.
 
 So I am publishing this library separately so that it can be easily installed as a library for the Arduino IDE or CLI. This also makes it available for use in GitHub workflow actions.
 
