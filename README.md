@@ -15,7 +15,7 @@ See the sketches in the `examples` folder.
 
 ## Version 2.0.0
 
-The library version 1.0.4 contains some, but not all, of the updates in version 1.0.5 from the Energia code, but also includes some other specific changes that I made myself
+The library version 2.0.0 contains some, but not all, of the updates in version 1.0.5 from the Energia code, but also includes some other specific changes that I made myself
 
 - Remove the use of the String class. This also removes the class method WhoAmI().
 - Remove support for putting the screen buffer data in FRAM

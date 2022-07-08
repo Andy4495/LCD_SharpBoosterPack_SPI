@@ -28,6 +28,7 @@
 LCD_SharpBoosterPack_SPI myScreen;
 uint8_t myOrientation = 0;
 uint16_t myCount = 0;
+char text[7]; // Buffer to store string version of int16 or uint16
 
 #define LCD_VERTICAL_MAX    myScreen.getSize()
 #define LCD_HORIZONTAL_MAX  myScreen.getSize()
@@ -60,7 +61,8 @@ void setup()
     for (uint8_t i = 0; i < 4; i++)
     {
         myScreen.setOrientation(i);
-        myScreen.text(10, 10, String(i));
+        itoa(i, text, 10);
+        myScreen.text(10, 10, text);
         myScreen.flush();
     }
     for (uint8_t i = 0; i < 20; i++)
@@ -97,7 +99,8 @@ void loop()
         myScreen.setXY(i, 20, 1);
     }
 
-    myScreen.text(10, 30, String(myCount, 10));
+    itoa(myCount, text, 10);
+    myScreen.text(10, 30, text);
 
     for (uint8_t i = 0; i <= 20; i++)
     {
