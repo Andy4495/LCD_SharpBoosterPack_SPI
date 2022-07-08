@@ -33,6 +33,10 @@
 //  Added horrible patch for CC13x0
 //  Tested against CC1352 and CC1350 LaunchPad boards
 //
+//  Edited 2022-JUL-06 by Andy4495
+//  Removed String and other changes to reduce code size
+//  These changes probably make this version incompatible with CC13x0 platforms
+//
 
 #ifndef LCD_SharpBoosterPack_SPI_h
 #define LCD_SharpBoosterPack_SPI_h
@@ -41,9 +45,7 @@
 #include "Terminal6.h"
 #include "Terminal12.h"
 #include <SPI.h>
-#if !defined(ti_sysbios_BIOS___VERS)
 #include <OneMsTaskTimer.h>
-#endif
 #include <Print.h>
 
 #define SHARP_96 96
@@ -59,14 +61,6 @@ tLCDWrapType;
 
 #define NUM_OF_FONTS 2
 typedef uint8_t tNumOfFontsType;
-
-typedef enum
-{
-    LCDPowerSaveOff,                    // normal operation mode
-    LCDPowerSaveOn,                     // power save mode enalbed
-}
-tLCDPowerModeType;
-
 
 ///
 /// @brief      Class for Sharp Memory Display BoosterPack
@@ -113,12 +107,6 @@ class LCD_SharpBoosterPack_SPI : public Print
     void end();
 
     ///
-    /// @brief	Return a Who Am I string
-    /// @return	Who Am I string
-    ///
-    String WhoAmI();
-
-    ///
     /// @brief	Clear the screen
     ///
     void clear();
@@ -161,27 +149,9 @@ class LCD_SharpBoosterPack_SPI : public Print
     ///
     uint8_t getSize();
 
-    ///
-    /// @brief    PowerSave mode
-    /// @details  Turn SPI module on / off
-    /// @param    mode default=HIGH=SPI on, LOW=SPI off
-    /// @note     AutoLowPowerMode is desactivated
-    ///
-    void setManualPowerMode(bool mode = HIGH);
-
-    ///
-    /// @brief    Set automatic low power mode
-    /// @param    mode default=true
-    /// @note     If another device on the SPI bus,
-    ///           use manual setManualPowerMode() instead
-    /// @note     Desactivated by setManualPowerMode()
-    ///
-    void setAutoLowPowerMode(bool mode = true);
-
     void setLineSpacing(uint8_t pixel);
     void setXY(uint8_t x, uint8_t y, uint8_t ulValue);
-    //void text(uint8_t x, uint8_t y, String s);
-    void text(uint8_t x, uint8_t y, String s, tLCDWrapType wrap = LCDWrapNextLine);
+    void text(uint8_t x, uint8_t y, const char* s, tLCDWrapType wrap = LCDWrapNextLine);
     void text(uint8_t x, uint8_t y, uint8_t c) ;
 
     ///
@@ -211,6 +181,9 @@ class LCD_SharpBoosterPack_SPI : public Print
     void LCD_turnOff();
     uint8_t _orientation;
     bool _reverse;
+    uint8_t lcd_vertical_max;
+    uint8_t lcd_horizontal_max;
+    unsigned char * DisplayBuffer;
 };
 #endif
 
