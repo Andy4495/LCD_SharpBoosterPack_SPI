@@ -32,7 +32,7 @@ The source code in this library is licensed under the terms of the Creative Comm
 
 [1]: https://energia.nu
 [4]: https://github.com/robertinant/EnergiaNG/tree/master/libraries/LCD_SharpBoosterPack_SPI
-[6]: https://arduino.github.io/arduino-cli/0.21/platform-specification/
+[6]: https://github.com/Andy4495/TI_Platform_Cores_For_Arduino
 [100]: https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
 [102]: https://creativecommons.org/licenses/by-nc-sa/3.0/
 [//]: # ([200]: https://github.com/Andy4495/LCD_SharpBoosterPack_SPI)
