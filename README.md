@@ -1,7 +1,7 @@
 # LCD_SharpBoosterPack_SPI  Library
 
 [![Arduino Compile Sketches](https://github.com/Andy4495/LCD_SharpBoosterPack_SPI/actions/workflows/arduino-compile-sketches.yml/badge.svg)](https://github.com/Andy4495/LCD_SharpBoosterPack_SPI/actions/workflows/arduino-compile-sketches.yml)
-[![Check Markdown Links](https://github.com/Andy4495/LCD_SharpBoosterPack_SPI/actions/workflows/CheckMarkdownLinks.yml/badge.svg)](https://github.com/Andy4495/LCD_SharpBoosterPack_SPI/actions/workflows/CheckMarkdownLinks.yml)
+[![Check Markdown Links](https://github.com/Andy4495/LCD_SharpBoosterPack_SPI/actions/workflows/check-links.yml/badge.svg)](https://github.com/Andy4495/LCD_SharpBoosterPack_SPI/actions/workflows/check-links.yml)
 
 This is a copy of the [LCD_SharpBoosterPack_SPI library][4] that is included with the [Energia application][1]. Version 2.0.0 contains changes as discussed below.
 
