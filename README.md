@@ -28,7 +28,7 @@ I have tested version 2.0.0 on MSP430 boards that have sufficient SRAM to suppor
 
 ## License
 
-The source code in this library is licensed under the terms of the Creative Commons [Attribution-NonCommercial-ShareAlike][100] license, aslo referred to as [CC BY-NC-SA][102].
+The source code in this library is licensed under the terms of the Creative Commons [Attribution-NonCommercial-ShareAlike][100] license, also referred to as [CC BY-NC-SA][102].
 
 [1]: https://energia.nu
 [4]: https://github.com/robertinant/EnergiaNG/tree/master/libraries/LCD_SharpBoosterPack_SPI
