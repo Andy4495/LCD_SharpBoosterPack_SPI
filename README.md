@@ -11,7 +11,7 @@ So I am publishing this library separately so that it can be easily installed as
 
 ## Installation
 
-This library can be installed with the Arduino Library Manager with the library name `LCD_SharpBP_SPI`.
+This library can be installed using the Arduino Library Manager with the library name `LCD_SharpBP_SPI`.
 
 ## Usage
 
