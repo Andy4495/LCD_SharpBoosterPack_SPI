@@ -9,6 +9,10 @@ Texas Instruments MSP430 and Tiva microcontrollers can be compiled using the Ard
 
 So I am publishing this library separately so that it can be easily installed as a library for the Arduino IDE or CLI. This also makes it available for use in GitHub workflow actions.
 
+## Installation
+
+This library can be installed with the Arduino Library Manager with the library name `LCD_SharpBP_SPI`.
+
 ## Usage
 
 See the sketches in the `examples` folder.
